@@ -21,12 +21,22 @@
 
 ## Machine Learning Models
 
-### Support Vector Machine (SVM)
+### Convolutional Neural Network (CNN)
 
-### Multinomial Naïve Bayes (MNB)
+### Support Vector Machine (SVM)
 
 
 ## Result
+
+### Scenario I
+
+### Scenario II
+
+### Scenario III
+
+### Scenario IV
+
+### Scenario V
 
 
 ## Conclusion
