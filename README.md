@@ -43,7 +43,42 @@ The data was crawled from Twitter using Snscrape library. The research focused o
 </table>
 
 ## Preprocessing Data
+The table below is the preprocessing phases and its example for each phase.
 
+<table>
+    <thead>
+        <tr>
+            <th>Preprocessing Phase</th>
+            <th>Text</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Raw Data</td>
+            <td>Ratusan Orang Meninggal dalam Tragedi Kanjuruhan, Tersangkanya Hanya 6</td>
+        </tr>
+        <tr>
+            <td>Data Cleaning</td>
+            <td>Ratusan Orang Meninggal dalam Tragedi Kanjuruhan Tersangkanya Hanya</td>
+        </tr>
+        <tr>
+            <td>Case Folding</td>
+            <td>ratusan orang meninggal dalam tragedi kanjuruhan tersangkanya hanya</td>
+        </tr>
+        <tr>
+            <td>Stopword Removal</td>
+            <td>ratusan orang meninggal tragedi kanjuruhan tersangkanya</td>
+        </tr>
+        <tr>
+            <td>Stemming</td>
+            <td>ratus orang tinggal tragedi kanjuruhan sangka</td>
+        </tr>
+        <tr>
+            <td>Tokenizing</td>
+            <td>[‘ratus’, ‘orang’, ‘tinggal’, ‘tragedi’, ‘kanjuruhan’, ‘sangka’]</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Feature Extraction with TF-IDF
 
