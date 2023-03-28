@@ -1,5 +1,7 @@
 # Hoax Detection on Social Media with CNN and SVM
-
+This is my Final Project course research for completing my bachelor study. The research is about hoax detection on social media (Twitter) with Convolutional Neural Network (CNN) dan Support Vector Machine (SVM). </br></br>
+Tools: Google Spreadsheet, Google Colab, Jupyter Notebook </br>
+Programming language: Python
 
 ## About the Project
 
