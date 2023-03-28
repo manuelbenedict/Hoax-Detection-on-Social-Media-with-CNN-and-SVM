@@ -6,7 +6,41 @@ Tools: Google Spreadsheet, Google Colab, Jupyter Notebook </br>
 Programming language: Python
 
 ## Dataset
-The data is crawled from Twitter, which is based on keywords related to predetermined news topics in this study regarding Ferdy Sambo and the Kanjuruhan Tragedy. The data that has been crawled is put together, known as a dataset. The total data is 25,325, consisting of 2,699 Kanjuruhan Tragedy news and 22,626 Ferdy Sambo news.
+The data was crawled from Twitter using Snscrape library. The research focused on two topics, i.e. Ferdy Sambo Case and Kanjuruhan Tragedy. After all data passed preprocessing, all data labelled with 0 for fact news or 1 for hoax news. Labelling was suppoerted by three person for each news to avoid subjectivity. The distribution of hoax/fact news is represented by table below.
+
+<table>
+    <thead>
+        <tr>
+            <th>Topic</th>
+            <th>Category</th>
+            <th>Number of Data</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=2>Kanjuruhan Tragedy</td>
+            <td>Fact</td>
+            <td>1,279</td>
+        </tr>
+        <tr>
+            <td>Hoax</td>
+            <td>1,420</td>
+        </tr>
+        <tr>
+            <td rowspan=2>Ferdy Sambo Case</td>
+            <td>Fact</td>
+            <td>11,588</td>
+        </tr>
+        <tr>
+            <td>Hoax</td>
+            <td>11,038</td>
+        </tr>
+        <tr>
+            <td colspan=2>Total</td>
+            <td>25,325</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Preprocessing Data
 
