@@ -87,7 +87,7 @@ The table below is the preprocessing phases and its example for each phase.
 
 
 ## Splitting Data
-
+The splitting data in this research used three spliting ratios (data train : data test), i.e. 90:10, 80:20, and 70:30. The detail use is on Scenario Results.
 
 ## Machine Learning Models
 
