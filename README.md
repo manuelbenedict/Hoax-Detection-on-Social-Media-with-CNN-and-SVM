@@ -98,9 +98,41 @@ The splitting data in this research used three spliting ratios (data train : dat
 
 ## Testing Scenario
 
-### Scenario I
+### Scenario I: Choosing the best splitting ratio
+
+<table>
+    <thead>
+        <tr>
+            <th rowspan=2>Splitting ratio</th>
+            <th colspan=2>Accuracy (%)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td>CNN</td>
+            <td>SVM</td>
+        </tr>
+        <tr>
+            <td><strong>90:10</strong></td>
+            <td><strong>93.91</strong></td>
+            <td><strong>95.52</strong></td>
+        </tr>
+        <tr>
+            <td>80:20</td>
+            <td>93.61</td>
+            <td>95.25</td>
+        </tr>
+        <tr>
+            <td>70:10</td>
+            <td>93.53</td>
+            <td>95.15</td>
+        </tr>
+    </tbody>
+</table>
 
 ### Scenario II
+
 
 ### Scenario III
 
