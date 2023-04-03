@@ -87,7 +87,7 @@ The table below is the preprocessing phases and its example for each phase.
 
 
 ## Splitting Data
-The splitting data in this research used three spliting ratios (data train : data test), i.e. 90:10, 80:20, and 70:30. The detail use is on Testing Scenario.
+The splitting data in this research used three spliting ratios (data train : data test), i.e. 90:10, 80:20, and 70:30. The detail use is on Scenario I (on Result).
 
 ## Machine Learning Models
 
@@ -167,13 +167,13 @@ The splitting data in this research used three spliting ratios (data train : dat
  </tr>
  <tr>
   <td>Unigram (Baseline)</td>
-  <td><strong>93.91</strong></td>
-  <td><strong>95.52</strong></td>
+  <td>93.91</td>
+  <td>95.52</td>
  </tr>
  <tr>
   <td><strong>Unigram + Bigram</strong></td>
-  <td>94.28 (+0.40)</td>
-  <td>95.92 (+0.41)</td>
+  <td><strong>94.28 (+0.40)</strong></td>
+  <td><strong>95.92 (+0.41)</strong></td>
  </tr>
  <tr>
   <td>Unigram + Bigram + Trigram</td>
@@ -184,8 +184,111 @@ The splitting data in this research used three spliting ratios (data train : dat
 
 ### Scenario IV: GloVe Embedding
 
+<table>
+ <tr>
+  <td rowspan="2">Rank</td>
+  <td colspan="3">CNN Model Accuracy (%)</td>
+  <td colspan="3">SVM Model Accuracy (%)</td>
+ </tr>
+ <tr>
+  <td>Baseline</td>
+  <td>Tweet</td>
+  <td>Tweet + Berita</td>
+  <td>Baseline</td>
+  <td>Tweet</td>
+  <td>Tweet + Berita</td>
+ </tr>
+ <tr>
+  <td>Top 1</td>
+  <td rowspan="3">93.91</td>
+  <td>94.35 (+0.47)</td>
+  <td>94.90 (+1.06)</td>
+  <td rowspan="3">95.52</td>
+  <td><strong>95.95 (+0.45)</strong></td>
+  <td>95.74 (+0.22)</td>
+ </tr>
+ <tr>
+  <td>Top 5</td>
+  <td>94.66 (+0.80)</td>
+  <td>94.93 (+1.09)</td>
+  <td>95.79 (+0.28)</td>
+  <td>95.60 (+0.08)</td>
+ </tr>
+ <tr>
+  <td>Top 10</td>
+  <td>94.70 (+0.85)</td>
+  <td><strong>94.99 (+1.15)</strong></td>
+  <td>95.47 (-0.06)</td>
+  <td>95.37 (-0.16)</td>
+ </tr>
+</table>
+
+Trying Top 15 and 20 with Tweet + news Corpus for CNN Model
+
+<table>
+ <tr>
+  <td rowspan="2">Rank</td>
+  <td colspan="3">CNN Model Accuracy (%)</td>
+ </tr>
+ <tr>
+  <td>Baseline</td>
+  <td>Tweet + Berita</td>
+ </tr>
+ <tr>
+  <td>Top 10</td>
+  <td rowspan="3">93.91</td>
+  <td>94.99 (+1.15)</td>
+ </tr>
+ <tr>
+  <td>Top 15</td>
+     <td><strong>95.11 (+1.29)</strong></td>
+ </tr>
+ <tr>
+  <td>Top 20</td>
+  <td>94.76 (+0.91)</td>
+ </tr>
+</table>
+
 ### Scenario V: CNN-SVM Hybrid Model
 
+<table>
+ <tr>
+  <td rowspan="2">Rank</td>
+  <td colspan="2">Model Accuracy (%)</td>
+  <td colspan="2">Relative Increase/Decrease to the (%)</td>
+ </tr>
+ <tr>
+  <td>CNN (Baseline)</td>
+  <td>CNN-SVM Hybrid</td>
+  <td>CNN (Baseline)</td>
+  <td>SVM (Baseline)</td>
+ </tr>
+ <tr>
+  <td>Top 1</td>
+  <td rowspan="4">93.91</td>
+  <td>94.82</td>
+  <td>(+0.96)</td>
+  <td>(+0.74)</td>
+ </tr>
+ <tr>
+  <td>Top 5</td>
+   <td>95.55</td>
+   <td>(+1.75)</td>
+   <td>(+0.03)</td>
+ </tr>
+ <tr>
+  <td>Top 10</td>
+  <td>95.79</td>
+  <td>(+2.01)</td>
+  <td>(+0.28)</td>
+ </tr>
+ <tr>
+  <td>Top 15</td>
+  <td>94.99</td>
+  <td>(+1.16)</td>
+  <td>(+0.55)</td>
+ </tr>
+</table>
 
 ## Result, Analysis, and Conclusion
 
