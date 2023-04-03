@@ -84,7 +84,28 @@ The table below is the preprocessing phases and its example for each phase.
 Feature extraction is converting raw data into numeric features so that the data can be processed without losing the true meaning of the original data. TF-IDF is a feature  extraction that is often used in text processing. The way it works depends on converting the space vector representation into a dense continuous vector space, making it possible to find contextual similarities between phrases and words in a particular document.
 
 ## Feature Expansion with GloVe
+Feature expansion is a method that changes the value of a zero-value feature by using the value of a similar word, by utilizing corpus similarity. The GloVe calculates the frequency of occurrence of a word simultaneously in a corpus to determine the similarity value of these words. The probability ratio of the occurrence of words has the potential to encode several forms of meaning and help improve performance on word analogy problems.</br>
 
+The output of GloVe embedding is a sequence of word similarity. This research uses two corpora to find the similarity of a word. The corpus is the Tweet corpus, a corpus formed from tweet text in the dataset, and Tweet + News, a corpus formed from the tweet text in the dataset and news data. News data is sourced from various Indonesian news portals, viz. CNN Indonesia, Tempo, Koran Sindo, and Republika.
+
+<table>
+    <thead>
+        <tr>
+            <th>Corpus</th>
+            <th>Number of words</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tweet</td>
+            <td>20,733</td>
+        </tr>
+        <tr>
+            <td>Tweet + Berita</td>
+            <td>96,358</td>
+        </tr>
+    </tbody>
+</table>
 
 ## Splitting Data
 The splitting data in this research used three spliting ratios (data train : data test), i.e. 90:10, 80:20, and 70:30. The detail use is on Scenario I (on Result).
