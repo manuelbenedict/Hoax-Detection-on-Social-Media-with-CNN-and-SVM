@@ -101,40 +101,86 @@ The splitting data in this research used three spliting ratios (data train : dat
 ### Scenario I: Choosing the best splitting ratio
 
 <table>
-    <thead>
-        <tr>
-            <th rowspan=2>Splitting ratio</th>
-            <th colspan=2>Accuracy (%)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td></td>
-            <td>CNN</td>
-            <td>SVM</td>
-        </tr>
-        <tr>
-            <td><strong>90:10</strong></td>
-            <td><strong>93.91</strong></td>
-            <td><strong>95.52</strong></td>
-        </tr>
-        <tr>
-            <td>80:20</td>
-            <td>93.61</td>
-            <td>95.25</td>
-        </tr>
-        <tr>
-            <td>70:10</td>
-            <td>93.53</td>
-            <td>95.15</td>
-        </tr>
-    </tbody>
+ <tr>
+  <td rowspan="2">Splitting ratio</td>
+  <td colspan="2">Accuracy (%)</td>
+ </tr>
+ <tr>
+  <td>CNN</td>
+  <td>SVM</td>
+ </tr>
+ <tr>
+  <td><strong>90:10</strong></td>
+  <td><strong>93.91</strong></td>
+  <td><strong>95.52</strong></td>
+ </tr>
+ <tr>
+  <td>80:20</td>
+  <td>93.61</td>
+  <td>95.25</td>
+ </tr>
+ <tr>
+  <td>70:10</td>
+  <td>93.53</td>
+  <td>95.15</td>
+ </tr>
 </table>
 
-### Scenario II
+### Scenario II: Choosing the best n-gram
 
+<table>
+ <tr>
+  <td rowspan="2">N-gram</td>
+  <td colspan="2">Accuracy (%)</td>
+ </tr>
+ <tr>
+  <td>CNN</td>
+  <td>SVM</td>
+ </tr>
+ <tr>
+  <td><strong>Unigram (Baseline)</strong></td>
+  <td><strong>93.91</strong></td>
+  <td><strong>95.52</strong></td>
+ </tr>
+ <tr>
+  <td>Bigram</td>
+  <td>91.95 (-2.09)</td>
+  <td>92.37 (-3.30)</td>
+ </tr>
+ <tr>
+  <td>Trigram</td>
+  <td>80.62 (-14.14)</td>
+  <td>80.39 (-15.85)</td>
+ </tr>
+</table>
 
-### Scenario III
+### Scenario III: Choosing the best n-gram combination
+
+<table>
+ <tr>
+  <td rowspan="2">N-gram</td>
+  <td colspan="2">Accuracy (%)</td>
+ </tr>
+ <tr>
+  <td>CNN</td>
+  <td>SVM</td>
+ </tr>
+ <tr>
+  <td>Unigram (Baseline)</td>
+  <td><strong>93.91</strong></td>
+  <td><strong>95.52</strong></td>
+ </tr>
+ <tr>
+  <td><strong>Unigram + Bigram</strong></td>
+  <td>94.28 (+0.40)</td>
+  <td>95.92 (+0.41)</td>
+ </tr>
+ <tr>
+  <td>Unigram + Bigram + Trigram</td>
+  <td>94.05 (+0.15)</td>
+  <td>95.86 (+0.35)</td>
+ </tr>
+</table>
 
 ### Scenario IV
 
