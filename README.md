@@ -81,7 +81,7 @@ The table below is the preprocessing phases and its example for each phase.
 </table>
 
 ## Feature Extraction with TF-IDF
-
+Feature extraction is converting raw data into numeric features so that the data can be processed without losing the true meaning of the original data. TF-IDF is a feature  extraction that is often used in text processing. The way it works depends on converting the space vector representation into a dense continuous vector space, making it possible to find contextual similarities between phrases and words in a particular document.
 
 ## Feature Expansion with GloVe
 
@@ -223,7 +223,7 @@ The splitting data in this research used three spliting ratios (data train : dat
  </tr>
 </table>
 
-Trying Top 15 and 20 with Tweet + news Corpus for CNN Model
+Trying Top 15 and 20 with Tweet + News Corpus for CNN Model
 
 <table>
  <tr>
@@ -277,10 +277,10 @@ Trying Top 15 and 20 with Tweet + news Corpus for CNN Model
    <td>(+0.03)</td>
  </tr>
  <tr>
-  <td>Top 10</td>
-  <td>95.79</td>
-  <td>(+2.01)</td>
-  <td>(+0.28)</td>
+  <td><strong>Top 10</strong></td>
+  <td><strong>95.79</strong></td>
+  <td><strong>(+2.01)</strong></td>
+  <td><strong>(+0.28)</strong></td>
  </tr>
  <tr>
   <td>Top 15</td>
