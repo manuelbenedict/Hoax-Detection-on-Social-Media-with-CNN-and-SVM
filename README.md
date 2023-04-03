@@ -182,9 +182,9 @@ The splitting data in this research used three spliting ratios (data train : dat
  </tr>
 </table>
 
-### Scenario IV
+### Scenario IV: GloVe Embedding
 
-### Scenario V
+### Scenario V: CNN-SVM Hybrid Model
 
 
 ## Result, Analysis, and Conclusion
