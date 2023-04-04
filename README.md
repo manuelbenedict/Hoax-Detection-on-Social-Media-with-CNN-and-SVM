@@ -110,12 +110,8 @@ The output of GloVe embedding is a sequence of word similarity. This research us
 ## Splitting Data
 The splitting data in this research used three spliting ratios (data train : data test), i.e. 90:10, 80:20, and 70:30. The detail use is on Scenario I (on Result).
 
-## Machine Learning Models
-
-### Convolutional Neural Network (CNN)
-
-### Support Vector Machine (SVM)
-
+## Models
+This project used and tested three models, i.e. Convolutional Neural Network (CNN), Support Vector Mahine (SVM), and hybrid (combination of CNN and SVM).
 
 ## Testing Scenario
 
