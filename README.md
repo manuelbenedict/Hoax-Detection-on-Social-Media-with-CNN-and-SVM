@@ -311,5 +311,35 @@ Trying Top 15 and 20 with Tweet + News Corpus for CNN Model
  </tr>
 </table>
 
-## Result, Analysis, and Conclusion
+## Analysis
 
+Based on the results of the tests performed, all scenario tests experienced an increase in performance, except for Scenario V which focused on the CNN-SVM hybrid model, unlike the previous scenario which focused on each CNN and SVM model. This graph shows the accuracy score relative increase to the baselines. The CNN has increased more significant than the SVM even though the SVM has the highest performance.  
+<img title="a title" alt="Alt text" src="graph.png">
+
+It shows that the CNN model may be optimized to get higher performance than the SVM Model. The table below shows the CNN (also implemented to the Hybrid CNN-SVM Model) performance after optimization.
+
+<table>
+ <tr>
+  <td rowspan="2">SVM Model Accuracy (%)</td>
+  <td rowspan="2">Model</td>
+  <td colspan="2">Model Accuracy (%)</td>
+ </tr>
+ <tr>
+  <td>before optimization</td>
+  <td>after optimization</td>
+ </tr>
+ <tr>
+  <td rowspan="2>Top 1</td>
+  <td rowspan="4">95.95 (+0.45)</td>
+  <td>CNN</td>
+  <td>95.11 (+1.29) </td>
+  <td>95.97 (+2.20)</td>
+ </tr>
+ <tr>
+  <td>Hybrid CNN-SVM</td>
+   <td>95.79</td>
+   <td>95.99</td>
+ </tr>
+</table>
+
+After CNN and Hybrid CNN-SVM Models were optimized, the both of models could get the higher performnce, even better than the highest SVM performance.
